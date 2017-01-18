@@ -1,10 +1,10 @@
 //package Tests;
 
 import org.junit.jupiter.api.Test;
-import java.util.*;
+
 import java.util.Date;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 /**
  * Created by JhonnyBill on 1/18/17.
@@ -48,9 +48,9 @@ class UsuarioTest {
 
 
         Date actualDate = new Date();
-        fecha_hora systemActualDate = new SimpleDateFormat("dd/MM/yyyy").parse("12/04/2015");
-        fecha_hora dateRequeried = new SimpleDateFormat("dd/MM/yyyy").parse("12/05/2015");
-        fecha_hora dateToModify = new SimpleDateFormat("dd/MM/yyyy").parse("12/06/2015");
+        fecha_hora systemActualDate = new fecha_hora();
+        fecha_hora dateRequeried = new fecha_hora();
+        fecha_hora dateToModify = new fecha_hora();
 
         u.crearSolicitud(11,u.getIdusuario(), systemActualDate, 1,dateRequeried);
 

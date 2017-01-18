@@ -12,4 +12,8 @@ public class modalidad {
 
     }
 
+    public boolean getModalidad(){
+        return isStrict;
+    }
+
 }

@@ -17,8 +17,8 @@ class SolicitudTest {
         estado nuevoEstado = new estado("Rechazada");
 
         sol.cambiarEstado(nuevoEstado);
-
         assertEquals(nuevoEstado, sol.getState());
+
 
     }
 

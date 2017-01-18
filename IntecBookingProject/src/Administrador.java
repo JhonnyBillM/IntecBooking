@@ -3,12 +3,12 @@ public class Administrador extends Usuario {
 
 
 	private Facilidad[] facilidadesAsignadas;
-
+	private SISTEMA sistema = SISTEMA.getInstance();
 	/**
 	 *  
 	 */
 	public void configurarSistema() {
-
+		cambiarModalidad();
 	}
 
 	/**
@@ -28,8 +28,8 @@ public class Administrador extends Usuario {
 	/**
 	 *  
 	 */
-	public void crearFacilidad() {
-
+	public void crearFacilidad(Facilidad facilidad){
+		sistema.agregarFacilidad(facilidad);
 	}
 
 	/**
@@ -42,15 +42,15 @@ public class Administrador extends Usuario {
 	/**
 	 *  
 	 */
-	public void borrarFacilidad() {
-
+	public void borrarFacilidad(Facilidad facilidad) {
+		sistema.BorrarFacilidad(facilidad.facilidadID);
 	}
 
 	/**
 	 *  
 	 */
 	public void cambiarModalidad() {
-
+		sistema.cambiarModalidad();
 	}
 
 }

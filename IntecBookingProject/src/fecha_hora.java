@@ -10,4 +10,7 @@ public class fecha_hora {
     }
 
 
+    public fecha_hora() {
+
+    }
 }
