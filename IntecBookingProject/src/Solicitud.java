@@ -1,6 +1,6 @@
 public class Solicitud {
 
-	private int idsolicitud;
+	public int idsolicitud;
 
 	private int idadministrador;
 
@@ -10,17 +10,23 @@ public class Solicitud {
 
 	private estado estado;
 
+
+
+
 	public Solicitud(){
+
+		//Crear solicitud con el private Solicitud
+
 
 	}
 
-	public Solicitud(int id, fecha_hora date, int user, estado estate){
+	public Solicitud(int id, int user, fecha_hora date, estado estate){
 
 		this.idsolicitud = id;
 		this.fechahorasolicitada = date;
-		estado = new estado("Espera");
 		cambiarEstado(estate);
 	}
+
 
 	/**
 	 *  
@@ -33,5 +39,6 @@ public class Solicitud {
 	public estado getState(){
 		return this.estado;
 	}
+
 
 }

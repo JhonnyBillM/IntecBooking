@@ -1,5 +1,7 @@
 public class Administrador extends Usuario {
 
+
+
 	private Facilidad[] facilidadesAsignadas;
 
 	/**
