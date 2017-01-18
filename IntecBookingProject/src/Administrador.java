@@ -1,6 +1,6 @@
 public class Administrador extends Usuario {
 
-	private String[] facilidadesAsignadas;
+	private [String] facilidadesAsignadas;
 
 	/**
 	 *  

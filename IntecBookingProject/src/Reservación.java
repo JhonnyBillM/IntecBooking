@@ -7,6 +7,8 @@ public class Reservación {
 
 	private int attribute2;
 
+	private int attribute4;
+
 	public void operation0() {
 
 	}

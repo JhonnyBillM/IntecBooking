@@ -6,4 +6,15 @@ public class Solicitud {
 
 	private fecha_hora fechahorasolicitada;
 
+	private int idusuario;
+
+	private estado estado;
+
+	/**
+	 *  
+	 */
+	public void cambiarEstado() {
+
+	}
+
 }

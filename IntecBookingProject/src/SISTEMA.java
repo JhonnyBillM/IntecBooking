@@ -1,5 +1,7 @@
 public class SISTEMA {
 
+	private modalidad modalidad;
+
 	private Administrador[] administrador;
 
 	private SESION sESION;
