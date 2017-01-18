@@ -1,15 +1,42 @@
 public class SESION {
 
+
+	private static SESION ourInstance = new SESION();
+
+	public static SESION getInstance() {
+		return ourInstance;
+	}
+
+	private SESION() {
+		usuario = null;
+		activa = false;
+	}
+
+	public SESION(boolean flag){
+		getInstance();
+	}
 	private Usuario usuario;
 
 	private boolean activa;
 
-	public Usuario logIn() {
-		return null;
+	public SESION logIn(Usuario Usuario) {
+		this.ourInstance.usuario = Usuario;
+		this.ourInstance.activa = true;
+		return getInstance();
 	}
 
-	public void logOut() {
+	public SESION logOut() {
+		this.ourInstance.usuario = null;
+		this.ourInstance.activa = false;
+		return getInstance();
+	}
 
+	public Usuario getUsuario(){
+		return this.usuario;
+	}
+
+	public boolean isActiva(){
+		return this.activa;
 	}
 
 }
