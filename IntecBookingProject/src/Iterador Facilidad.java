@@ -1,5 +1,5 @@
-public class Iterador Facilidad {
+class IteradorFacilidad {
 
-	private Facilidad Concreta facilidad Concreta;
+	private Facilidad Concreta;
 
 }

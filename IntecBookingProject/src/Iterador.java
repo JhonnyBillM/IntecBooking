@@ -1,6 +1,6 @@
 public class Iterador {
 
-	private [facilidad] facilidad;
+	private Facilidad[] facilidad;
 
 	public facilidad primero() {
 		return null;

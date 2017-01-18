@@ -17,14 +17,7 @@ class UsuarioTest {
 
         Solicitud s = new Solicitud();
 
-        assert();
     }
-
-    private find(Solicitud solicitud){
-
-        return true;
-    }
-
 
     @Test
     void auth() {
