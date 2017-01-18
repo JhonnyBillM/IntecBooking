@@ -10,6 +10,17 @@ public class Solicitud {
 
 	private estado estado;
 
+	public Solicitud(){
+
+	}
+
+	public Solicitud(int id, fecha_hora date, int user, estado estate){
+
+		this.idsolicitud = id;
+		this.fechahorasolicitada = date;
+		this.estado = estate;
+
+	}
 	/**
 	 *  
 	 */
