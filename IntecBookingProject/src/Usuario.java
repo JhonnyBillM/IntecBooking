@@ -21,7 +21,7 @@ public class Usuario {
 
 	}
 
-	public void crearSolicitud() {
+	public void crearSolicitud(int solId, int userID, fecha_hora fechaSolicitada, int tiempoSolicitud, fecha_hora fechaSolicitud) {
 
 	}
 
@@ -32,7 +32,7 @@ public class Usuario {
 	/**
 	 *  
 	 */
-	public void modificarSolicitudPropia() {
+	public void modificarSolicitudPropia(int solId, fecha_hora newFecha) {
 
 	}
 
@@ -82,6 +82,7 @@ public class Usuario {
 			}
 			return false;
 		}
+	public int getIdusuario(){return this.idusuario;}
 
 
 }

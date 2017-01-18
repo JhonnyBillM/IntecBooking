@@ -41,5 +41,6 @@ public class Solicitud {
 	}
 
 	public int getSolicitanteID(){return this.idusuario;}
+	public fecha_hora getSolicitudFecha(){return this.fechahorasolicitada;}
 
 }

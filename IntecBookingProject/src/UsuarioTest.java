@@ -1,7 +1,7 @@
 //package Tests;
 
 import org.junit.jupiter.api.Test;
-
+import java.util.*;
 import java.util.Date;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -19,8 +19,11 @@ class UsuarioTest {
 
         int id = 10, userId = 5;
 
+        Usuario user = new Usuario(1,"k","Taiga","Kagami");
 
         Date actualDate = new Date();
+
+
         fecha_hora dateRequeried = new fecha_hora(actualDate);
         fecha_hora systemActualDate = new fecha_hora(actualDate);
         estado est = new estado("Espera");
@@ -43,6 +46,19 @@ class UsuarioTest {
     void modificarSolicitudPropia() {
         Usuario u = new Usuario(1, "k", "Taiga", "Kagami");
 
+
+        Date actualDate = new Date();
+        fecha_hora systemActualDate = new SimpleDateFormat("dd/MM/yyyy").parse("12/04/2015");
+        fecha_hora dateRequeried = new SimpleDateFormat("dd/MM/yyyy").parse("12/05/2015");
+        fecha_hora dateToModify = new SimpleDateFormat("dd/MM/yyyy").parse("12/06/2015");
+
+        u.crearSolicitud(11,u.getIdusuario(), systemActualDate, 1,dateRequeried);
+
+        u.modificarSolicitudPropia(11, dateToModify);
+
+        /*Iterar sobre las solicitudes y comparar las fechas*/
+        Solicitud s = u.obtenerSolicitudPropia(u.getIdusuario(),11);
+        assertEquals(s.getSolicitudFecha(),dateToModify);
     }
     /*Really?*/
     @Test
