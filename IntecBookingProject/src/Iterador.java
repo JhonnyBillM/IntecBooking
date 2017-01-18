@@ -1,7 +1,11 @@
+import java.util.List;
+
 public class Iterador {
 
-	private Facilidad[] facilidad;
+	private List<Facilidad> facilidad;
 
+	public Iterador(){
+	}
 	public Facilidad primero() {
 		return null;
 	}
