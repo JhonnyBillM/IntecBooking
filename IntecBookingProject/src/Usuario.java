@@ -53,8 +53,19 @@ public class Usuario {
 	/**
 	 *  
 	 */
-	public void buscarFacilidad() {
+	public boolean buscarFacilidad(int id) {
 
-	}
+			SISTEMA sis = SISTEMA.getInstance();
+
+			for (Solicitud soli: sis.solicitudesList) {
+
+				if(soli.idsolicitud == id){
+					return true;
+				}
+
+			}
+			return false;
+		}
+
 
 }

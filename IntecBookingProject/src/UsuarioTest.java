@@ -41,21 +41,28 @@ class UsuarioTest {
 
     @Test
     void modificarSolicitudPropia() {
+        Usuario u = new Usuario(1, "k", "Taiga", "Kagami");
 
     }
-
+    /*Really?*/
     @Test
     void visualizarSolicitudPropia() {
 
     }
 
+    /*?*/
     @Test
     void consultarFacilidad() {
 
     }
 
+
+
     @Test
     void buscarFacilidad() {
+        Usuario user = new Usuario(1,"k","Taiga","Kagami");
+
+        assertEquals(user.buscarFacilidad(12),true);
 
     }
 
