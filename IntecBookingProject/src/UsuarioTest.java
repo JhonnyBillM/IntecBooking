@@ -2,6 +2,8 @@
 
 import org.junit.jupiter.api.Test;
 
+import java.util.Date;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
@@ -13,9 +15,22 @@ class UsuarioTest {
 
 
     @Test
-    void crearSolicitud(int id, int user, fecha_hora dateRequeried, int duration, fecha_hora systemActualDate) {
+    void crearSolicitud() {
 
-        Solicitud s = new Solicitud();
+        int id = 10, userId = 5;
+
+
+        Date actualDate = new Date();
+        fecha_hora dateRequeried = new fecha_hora(actualDate);
+        fecha_hora systemActualDate = new fecha_hora(actualDate);
+        estado est = new estado("Espera");
+
+        Solicitud s = new Solicitud(id, userId, systemActualDate, est);
+
+        SISTEMA sis = SISTEMA.getInstance();
+
+
+        assertEquals(sis.solicitudExists(id), true);
 
     }
 

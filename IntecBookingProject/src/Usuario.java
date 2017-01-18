@@ -8,6 +8,19 @@ public class Usuario {
 
 	private String apellido;
 
+
+	public Usuario(){
+
+	}
+
+	public Usuario(int id, String pwd, String name, String apellido){
+		this.idusuario = id;
+		this.contraseña = pwd;
+		this.nombre = name;
+		this.apellido = apellido;
+
+	}
+
 	public void crearSolicitud() {
 
 	}
