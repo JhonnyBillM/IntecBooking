@@ -18,14 +18,20 @@ public class Solicitud {
 
 		this.idsolicitud = id;
 		this.fechahorasolicitada = date;
-		this.estado = estate;
-
+		estado = new estado("Espera");
+		cambiarEstado(estate);
 	}
+
 	/**
 	 *  
 	 */
-	public void cambiarEstado() {
+	public void cambiarEstado(estado st) {
 
+		this.estado = st;
+
+	}
+	public estado getState(){
+		return this.estado;
 	}
 
 }
