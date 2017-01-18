@@ -1,5 +1,6 @@
-public class Facilidad Concreta extends Iterador {
+class FacilidadConcreta extends Iterador {
 
-	private Facilidad crearIterador;
-
+	public FacilidadConcreta(Facilidad crearIterador) {
+		Facilidad crearIterador1 = crearIterador;
+	}
 }

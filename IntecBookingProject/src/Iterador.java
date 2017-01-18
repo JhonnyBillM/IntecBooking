@@ -2,11 +2,11 @@ public class Iterador {
 
 	private Facilidad[] facilidad;
 
-	public facilidad primero() {
+	public Facilidad primero() {
 		return null;
 	}
 
-	public facilidad siguiente() {
+	public Facilidad siguiente() {
 		return null;
 	}
 
