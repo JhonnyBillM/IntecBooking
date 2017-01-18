@@ -10,7 +10,11 @@ public class Usuario {
 
 
 	public Usuario(){
+		apellido = "none";
+	}
 
+	public String getApellido(){
+		return apellido;
 	}
 
 	public Usuario(int id, String pwd, String name, String apellido){
@@ -69,19 +73,19 @@ public class Usuario {
 	/**
 	 *  
 	 */
-	public boolean buscarFacilidad(int id) {
+	public boolean buscarFacilidad(String id) {
 
 			SISTEMA sis = SISTEMA.getInstance();
 
-			for (Solicitud soli: sis.solicitudesList) {
+			for (Facilidad soli: sis.facilidadesList) {
 
-				if(soli.idsolicitud == id){
+				if(soli.facilidadID.equals(id)){
 					return true;
 				}
-
 			}
 			return false;
 		}
+
 	public int getIdusuario(){return this.idusuario;}
 
 

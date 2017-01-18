@@ -66,4 +66,13 @@ public class SISTEMA {
 		}
 		return false;
 	}
+
+
+	public Usuario CurrentUsuario(){
+
+		if(this.sESION.getUsuario() == null){
+			return null;
+		}
+		return this.sESION.getUsuario();
+	}
 }

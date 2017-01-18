@@ -18,21 +18,13 @@ class UsuarioTest {
     void crearSolicitud() {
 
         int id = 10, userId = 5;
-
         Usuario user = new Usuario(1,"k","Taiga","Kagami");
-
         Date actualDate = new Date();
-
-
         fecha_hora dateRequeried = new fecha_hora(actualDate);
         fecha_hora systemActualDate = new fecha_hora(actualDate);
         estado est = new estado("Espera");
-
         Solicitud s = new Solicitud(id, userId, systemActualDate, est);
-
         SISTEMA sis = SISTEMA.getInstance();
-
-
         assertEquals(sis.solicitudExists(id), true);
 
     }
@@ -41,7 +33,7 @@ class UsuarioTest {
     void auth() {
 
     }
-
+/*
     @Test
     void modificarSolicitudPropia() {
         Usuario u = new Usuario(1, "k", "Taiga", "Kagami");
@@ -56,10 +48,10 @@ class UsuarioTest {
 
         u.modificarSolicitudPropia(11, dateToModify);
 
-        /*Iterar sobre las solicitudes y comparar las fechas*/
+        /*Iterar sobre las solicitudes y comparar las fechas*//*
         Solicitud s = u.obtenerSolicitudPropia(u.getIdusuario(),11);
         assertEquals(s.getSolicitudFecha(),dateToModify);
-    }
+    }*/
     /*Really?*/
     @Test
     void visualizarSolicitudPropia() {
@@ -77,8 +69,10 @@ class UsuarioTest {
     @Test
     void buscarFacilidad() {
         Usuario user = new Usuario(1,"k","Taiga","Kagami");
-
-        assertEquals(user.buscarFacilidad(12),true);
+        Facilidad facilidad = new Facilidad("12");
+        SISTEMA sis = SISTEMA.getInstance();
+        sis.agregarFacilidad(facilidad);
+        assertEquals(user.buscarFacilidad("12"),true);
 
     }
 

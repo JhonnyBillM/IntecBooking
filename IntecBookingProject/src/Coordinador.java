@@ -1,6 +1,8 @@
+import java.util.ArrayList;
+
 public class Coordinador extends Usuario {
 
-	private String facilidadAsignada;
+	private ArrayList<Facilidad> facilidadAsignada;
 
 	/**
 	 *  

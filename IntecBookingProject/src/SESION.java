@@ -32,6 +32,9 @@ public class SESION {
 	}
 
 	public Usuario getUsuario(){
+		if(usuario == null){
+			return new Usuario();
+		}
 		return this.usuario;
 	}
 
