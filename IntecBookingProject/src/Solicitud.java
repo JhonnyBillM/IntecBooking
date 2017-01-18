@@ -40,5 +40,6 @@ public class Solicitud {
 		return this.estado;
 	}
 
+	public int getSolicitanteID(){return this.idusuario;}
 
 }

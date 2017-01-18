@@ -49,7 +49,23 @@ public class Usuario {
 	public void consultarFacilidad() {
 
 	}
+	/**
+	 *
+	 *
+	 */
+	public Solicitud obtenerSolicitudPropia(int userId, int solicitudId){
+		SISTEMA sis = SISTEMA.getInstance();
 
+		for (Solicitud soli: sis.solicitudesList) {
+
+			if(soli.idsolicitud == solicitudId && soli.getSolicitanteID() == userId){
+				return soli;
+			}
+
+		}
+		return null;
+
+	}
 	/**
 	 *  
 	 */
