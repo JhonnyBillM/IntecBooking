@@ -54,8 +54,8 @@
       <file leaf-file-name="AdministradorTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/IntecBookingProject/src/AdministradorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="53" column="29" lean-forward="true" selection-start-line="53" selection-start-column="29" selection-end-line="53" selection-end-column="29" />
+            <state relative-caret-position="134">
+              <caret line="46" column="8" lean-forward="false" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -167,7 +167,6 @@
         <option value="$PROJECT_DIR$/IntecBookingProject/src/Administrador.java" />
         <option value="$PROJECT_DIR$/IntecBookingProject/src/Facilidad.java" />
         <option value="$PROJECT_DIR$/IntecBookingProject/src/SolicitudTest.java" />
-        <option value="$PROJECT_DIR$/IntecBookingProject/src/AdministradorTest.java" />
         <option value="$PROJECT_DIR$/IntecBookingProject/src/Coordinador.java" />
         <option value="$PROJECT_DIR$/IntecBookingProject/src/modalidadTest.java" />
         <option value="$PROJECT_DIR$/IntecBookingProject/src/Solicitante.java" />
@@ -178,6 +177,7 @@
         <option value="$PROJECT_DIR$/IntecBookingProject/src/Usuario.java" />
         <option value="$PROJECT_DIR$/IntecBookingProject/src/SISTEMATest.java" />
         <option value="$PROJECT_DIR$/IntecBookingProject/src/SESIONTest.java" />
+        <option value="$PROJECT_DIR$/IntecBookingProject/src/AdministradorTest.java" />
       </list>
     </option>
   </component>
@@ -638,7 +638,7 @@
     <option name="totallyTimeSpent" value="41000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-3" y="0" width="1372" height="771" extended-state="6" />
+    <frame x="-3" y="0" width="1372" height="771" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1093,8 +1093,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/IntecBookingProject/src/AdministradorTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="53" column="29" lean-forward="true" selection-start-line="53" selection-start-column="29" selection-end-line="53" selection-end-column="29" />
+        <state relative-caret-position="134">
+          <caret line="46" column="8" lean-forward="false" selection-start-line="46" selection-start-column="8" selection-end-line="46" selection-end-column="8" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

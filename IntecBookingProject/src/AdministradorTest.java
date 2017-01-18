@@ -44,7 +44,7 @@ class AdministradorTest {
         int cnt = sistema.facilidadesList.size();
         adm.borrarFacilidad(facilidad);
         assertEquals(cnt-1, sistema.facilidadesList.size());
-    }
+    }   
 
     @Test
     void cambiarModalidad() {
